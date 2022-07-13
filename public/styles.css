@@ -1,0 +1,32 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background: url('/asset/login_bg2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.center-div{
+    padding-top:10%;
+}
+
+.btn.btn-success{
+padding:.4em 2em;
+}
+
+form{
+    padding: 0 1em;
+}
+#login .title > span{
+    font-size:.8em
+}
+.email-text{
+    font-size:.7em;
+    margin-left:-136px;
+}
+.form-group{
+    padding-bottom:10px
+}

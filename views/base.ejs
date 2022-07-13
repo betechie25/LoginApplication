@@ -1,12 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Login Application</h1>
-</body>
-</html>
+<%- include('header') -%>
+    <div class="text-center center-div" id="login">
+        <div class="container w-25 border py-5">
+            <div class="title pb-5">
+                <h2 class="font-weight-bold">Login Form</h2>
+                <span class="text-muted">Login For Existing User</span>
+            </div>
+           
+            <form action= "#" classs="pt-3">
+                <div class="form-group">
+                    <input type="email" class="form-control" name="email" placeholder="email">
+                    <small class="form-text text-muted email-text">Registered email address</small>
+                </div>
+                <div class="form-group">
+                    <input type="pasword" class="form-control" name="password" placeholder="password">
+                </div>
+                <button type="submit" class="btn btn-success rounded-pill">Submit</button>
+            </form>
+        </div>
+    </div>
+
+<%- include('footer') -%>
