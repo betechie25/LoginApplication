@@ -24,4 +24,17 @@ router.get('/dashboard',(req,res)=>{
         res.send('Unauthorized User')
     }
 })
+
+//logout route
+router.get('/logout',(req,res)=>{
+    console.log("prerna");
+    req.session.destroy(function(error){
+        if(error){
+            req.send(`Error Occurs ${error}`)
+        }else{
+            res.render('base.ejs',{title:"Express", logout:'Logout Successfully...'})
+        }
+    })
+});
 module.exports = router;
+

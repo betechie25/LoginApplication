@@ -4,8 +4,13 @@
             <div class="title pb-5">
                 <h2 class="font-weight-bold">Login Form</h2>
                 <span class="text-muted">Login For Existing User</span>
+                <% if(locals.logout){%>
+                    <div class="alert alert-success text-center">
+                        <%= logout%>
+                    </div>
+                <%}%>
             </div>
-           
+     
             <form action= "/route/login" method="POST" classs="pt-3">
                 <div class="form-group">
                     <input type="email" class="form-control" name="email" placeholder="email">
